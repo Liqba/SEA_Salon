@@ -10,14 +10,14 @@ const Navbar = ({isLoggedIn, setIsLoggedIn}) => {
         <Link to="/" className="navbar-brand">SEA Salon</Link>
       </div>
       <ul className="navbar-list">
+      <li className="navbar-item">
+          <Link to="/reviews" className="navbar-link">Reviews</Link>
+        </li>
         <li className="navbar-item">
           <Link to="/services" className="navbar-link">Services</Link>
         </li>
         <li className="navbar-item">
           <Link to="/branches" className="navbar-link">Branches</Link>
-        </li>
-        <li className="navbar-item">
-          <Link to="/reviews" className="navbar-link">Reviews</Link>
         </li>
         {isLoggedIn && (
           <>
